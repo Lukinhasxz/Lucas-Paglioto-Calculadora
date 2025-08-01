@@ -34,7 +34,7 @@ h1 {
 }
 .botoes {
     display: grid;
-    grid-template-columns: repeat(3, 50px);
+    grid-template-columns: repeat(5, 50px);
     gap: 10px;
 }
 button {
@@ -61,4 +61,20 @@ button:hover {
     background-color: rgba(83, 0, 151, 0.2);
     border-radius: 5px;
     padding: 10px;
+}
+
+/* RESPONSIVIDADE */
+
+/* TABLETS */
+@media(max-width:768px){
+    button, .display {
+        font-size: x-large;
+    }
+}
+
+/* CELULARES */
+@media(max-width:480px) {
+    .botoes {
+        grid-template-columns: repeat(3, 50px);
+    }
 }
